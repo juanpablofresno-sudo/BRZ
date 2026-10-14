@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotiza con BRZ · Ferretería y Suministros</title>
+<meta name="theme-color" content="#292E33">
+<style>
+  :root{
+    --amarillo:#FABF0F;
+    --carbon:#292E33;
+    --carbon2:#1E2226;
+    --gris:#EDF0F2;
+    --gris-txt:#98A0A8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+                "Helvetica Neue",Arial,sans-serif;
+    background:var(--carbon);
+    color:var(--gris);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .envuelve{max-width:640px;margin:0 auto;padding:0 0 40px}
+
+  /* ---------------------------------------------------- cabecera */
+  header{
+    background:var(--amarillo);
+    padding:22px 20px 20px;
+    text-align:center;
+  }
+  header img{width:230px;max-width:70%;height:auto;display:block;
+             margin:0 auto 10px}
+  header h1{
+    font-size:19px;color:var(--carbon);
+    font-weight:800;letter-spacing:-.2px;line-height:1.25;
+  }
+
+  /* ---------------------------------------------------- cuerpo */
+  main{padding:0 20px}
+  .tarjeta{
+    background:var(--carbon2);
+    border-radius:16px;
+    padding:22px 20px;
+    margin-top:20px;
+  }
+  .tarjeta.destacada{
+    border:2px solid var(--amarillo);
+  }
+  .etiqueta{
+    display:inline-block;
+    background:var(--amarillo);
+    color:var(--carbon);
+    font-size:12px;font-weight:800;
+    letter-spacing:.6px;
+    padding:5px 12px;border-radius:20px;
+    margin-bottom:14px;
+  }
+  h2{
+    font-size:23px;line-height:1.2;
+    color:#fff;font-weight:800;
+    margin-bottom:12px;letter-spacing:-.3px;
+  }
+  h2 .amar{color:var(--amarillo)}
+  p{font-size:16px;color:var(--gris);margin-bottom:12px}
+  p.chico{font-size:14px;color:var(--gris-txt)}
+  strong{color:#fff}
+  .mail{
+    display:inline-block;
+    background:var(--carbon);
+    border:1px solid #3a4249;
+    border-radius:8px;
+    padding:8px 12px;
+    font-size:15px;
+    color:var(--amarillo);
+    font-weight:700;
+    word-break:break-all;
+    margin:6px 0 4px;
+  }
+  ul{list-style:none;margin:14px 0}
+  ul li{
+    font-size:15px;color:var(--gris);
+    padding-left:26px;position:relative;margin-bottom:8px;
+  }
+  ul li::before{
+    content:"";position:absolute;left:0;top:7px;
+    width:10px;height:10px;border-radius:50%;
+    background:var(--amarillo);
+  }
+
+  /* ---------------------------------------------------- botones */
+  .boton{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;
+    padding:17px 18px;
+    border-radius:14px;
+    font-size:17px;font-weight:800;
+    text-decoration:none;
+    margin-top:12px;
+    transition:transform .08s ease;
+    line-height:1.2;
+  }
+  .boton:active{transform:scale(.98)}
+  .boton svg{width:24px;height:24px;flex:0 0 24px}
+  .b-amarillo{background:var(--amarillo);color:var(--carbon)}
+  .b-oscuro{
+    background:#333A41;color:#fff;
+    border:1px solid #454d55;
+  }
+  .b-wsp{background:#25D366;color:#0b2e18}
+  .boton small{display:block;font-size:12px;font-weight:600;
+               opacity:.75;margin-top:2px}
+  .boton .txt{text-align:left}
+
+  .separador{
+    display:flex;align-items:center;gap:12px;
+    margin:26px 0 4px;color:var(--gris-txt);font-size:13px;
+    font-weight:700;letter-spacing:1px;
+  }
+  .separador::before,.separador::after{
+    content:"";flex:1;height:1px;background:#3a4249;
+  }
+
+  .nota{
+    text-align:center;font-size:12.5px;color:var(--gris-txt);
+    margin-top:14px;line-height:1.5;
+  }
+  footer{
+    text-align:center;padding:28px 20px 10px;
+    font-size:12.5px;color:var(--gris-txt);
+  }
+  footer b{color:var(--amarillo)}
+</style>
+</head>
+<body>
+<div class="envuelve">
+
+  <header>
+    <img src="logo-brz.png" alt="BRZ · Ferretería y Suministros">
+    <h1>Cotiza tus materiales en el día</h1>
+  </header>
+
+  <main>
+
+    <!-- ============================================ PASO 1 -->
+    <section class="tarjeta destacada">
+      <span class="etiqueta">LISTA GRANDE</span>
+      <h2>¿Tienes una <span class="amar">lista larga</span> de productos?</h2>
+      <p>Mándala <strong>en cualquier formato</strong>: Excel, PDF, Word,
+         una foto del cuaderno o pegada en el chat.</p>
+      <p class="chico">Puedes mandarla por este mismo medio o por correo a:</p>
+      <span class="mail">juanpablofresno@gmail.com</span>
+      <ul>
+        <li>Te la cotizamos <strong>el mismo día</strong>.</li>
+        <li>Precio por línea, en neto y con IVA.</li>
+        <li>Sin compromiso de compra.</li>
+      </ul>
+      <a class="boton b-amarillo"
+         href="https://wa.me/56995191863?text=Hola%2C%20necesito%20cotizar%20una%20lista%20de%20materiales.%20Se%20la%20mando%20por%20ac%C3%A1%3A%20"
+         target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.09c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.24-3.3-.69-2.79-1.1-4.56-3.94-4.7-4.12-.14-.19-1.12-1.49-1.12-2.84 0-1.35.71-2.02.96-2.29.25-.27.55-.34.73-.34.18 0 .37 0 .53.01.17.01.4-.06.62.48.23.55.78 1.9.85 2.04.07.14.11.3.02.48-.09.19-.14.3-.28.47-.14.16-.29.36-.42.48-.14.14-.28.29-.12.56.16.27.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.23 1.38.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.6.75 1.87.89.27.14.46.2.53.32.07.11.07.67-.17 1.35z"/>
+        </svg>
+        <span class="txt">Mandar mi lista por WhatsApp<small>Juan Pablo
+          Fresno · +56 9 9519 1863</small></span>
+      </a>
+      <a class="boton b-oscuro" href="mailto:juanpablofresno@gmail.com
+         ?subject=Cotizaci%C3%B3n%20de%20materiales%20-%20BRZ
+         &amp;body=Hola%2C%20adjunto%20mi%20lista%20de%20materiales%20para%20cotizar.">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/>
+        </svg>
+        <span class="txt">Mandarla por correo<small>
+          juanpablofresno@gmail.com</small></span>
+      </a>
+    </section>
+
+    <div class="separador">O SI ES ALGO PUNTUAL</div>
+
+    <!-- ============================================ PASO 2 -->
+    <section class="tarjeta">
+      <span class="etiqueta">POCOS PRODUCTOS</span>
+      <h2>¿Necesitas <span class="amar">una cosa o dos</span>?</h2>
+      <p>Escríbenos directo, sin vueltas. Te respondemos al tiro.</p>
+
+      <a class="boton b-wsp"
+         href="https://wa.me/56995191863?text=Hola%2C%20necesito%20cotizar%20unos%20productos%3A%20"
+         target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.09c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.24-3.3-.69-2.79-1.1-4.56-3.94-4.7-4.12-.14-.19-1.12-1.49-1.12-2.84 0-1.35.71-2.02.96-2.29.25-.27.55-.34.73-.34.18 0 .37 0 .53.01.17.01.4-.06.62.48.23.55.78 1.9.85 2.04.07.14.11.3.02.48-.09.19-.14.3-.28.47-.14.16-.29.36-.42.48-.14.14-.28.29-.12.56.16.27.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.23 1.38.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.6.75 1.87.89.27.14.46.2.53.32.07.11.07.67-.17 1.35z"/>
+        </svg>
+        <span class="txt">Escribirle a Juan Pablo<small>
+          +56 9 9519 1863</small></span>
+      </a>
+
+      <a class="boton b-wsp"
+         href="https://wa.me/56998848441?text=Hola%2C%20necesito%20cotizar%20unos%20productos%3A%20"
+         target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.09c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.24-3.3-.69-2.79-1.1-4.56-3.94-4.7-4.12-.14-.19-1.12-1.49-1.12-2.84 0-1.35.71-2.02.96-2.29.25-.27.55-.34.73-.34.18 0 .37 0 .53.01.17.01.4-.06.62.48.23.55.78 1.9.85 2.04.07.14.11.3.02.48-.09.19-.14.3-.28.47-.14.16-.29.36-.42.48-.14.14-.28.29-.12.56.16.27.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.23 1.38.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.6.75 1.87.89.27.14.46.2.53.32.07.11.07.67-.17 1.35z"/>
+        </svg>
+        <span class="txt">Escribirle a Cristian<small>
+          +56 9 9884 8441</small></span>
+      </a>
+
+      <p class="nota">Respondemos de lunes a sábado, en horario de oficina.<br>
+        Si escribes fuera de hora, te contestamos a primera hora.</p>
+    </section>
+
+    <!-- ============================================ QUIENES SOMOS -->
+    <section class="tarjeta">
+      <h2 style="font-size:19px">¿Por qué <span class="amar">BRZ</span>?</h2>
+      <ul>
+        <li><strong>Más de 2.700 productos</strong> en 30 secciones:
+            ferretería, gasfitería, electricidad, pinturas y herramientas.</li>
+        <li><strong>Precios bajo Sodimac y Construmart</strong> en la mayoría
+            del catálogo, comprobado producto por producto.</li>
+        <li><strong>Despachamos a todo Chile.</strong> Consulta por tu ciudad
+            y te avisamos qué días despachamos.</li>
+        <li><strong>Sin mínimo de compra.</strong> Pide lo que necesitas,
+            aunque sea poco.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <b>BRZ</b> · Ferretería y Suministros<br>
+    Distribuidora Todo Ferretero SpA
+  </footer>
+
+</div>
+</body>
+</html>
